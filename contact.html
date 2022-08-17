@@ -1,0 +1,97 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>KaJack Piper</title>
+  <!-- css -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https:fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="./index.html"><img src="./pictures/KaJack Piper Small.png" alt=""></a>
+      <div class="nav-links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./index.html"><i class="fas fa-home"></i> HOME</a></li>
+          <li><a href="./about.html"><i class="far fa-user"></i> ABOUT US</a></li>
+          <li><a href="./services.html"><i class="far fa-clone"></i>SERVICES</a>
+          </li>
+          <li><a href="./rates.html"><i class="fas fa-tags"></i>OUR RATES</a></li>
+          <li><a href="./portfolio.html"><i class="far fa-edit"></i> PORTFOLIO</a></li>
+          <li><a href="./contact.html"><i class="fas fa-phone-square-alt"></i>CONTACT US</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>  
+    </nav>
+
+    
+  <section class="footer-wrapper">
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="linkedin.com/in/jackson-kairani-b87410b5"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+ 
+  </section>
+
+
+
+
+  <!--------------- JavaScript for Toggle Menu --------------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    } 
+  </script>
+</body>
+</html>
