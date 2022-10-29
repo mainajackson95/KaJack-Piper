@@ -269,6 +269,13 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media(max-width: 700px) {
+  .rates-row {
+    display: block;
+    flex-basis: 100%;
+  }
+}
+
 /**************** services **********************/
 .services {
   width: 80%;
@@ -308,6 +315,13 @@ h3 {
   padding-top: 5%;
   text-transform: uppercase;
   color: #ee4343;
+}
+
+@media(max-width: 700px) {
+  .services-row {
+    display: block;
+    flex-basis: 100%;
+  }
 }
 
 /***************** footer *****************************/
@@ -385,16 +399,18 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 700px){
   .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
+    flex-basis: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: relative;
+    background-color: #e91e63;
+  }
 }
 
 
